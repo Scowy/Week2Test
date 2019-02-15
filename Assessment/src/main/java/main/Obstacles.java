@@ -1,18 +1,27 @@
 package main;
 
-public class Treasure {
+/* Not implemented in the game, is a class is for expanding on the first release */
+
+public class Obstacles {
 
 	private int xPos;
 	private int yPos;
 	private int r;
 	private int r2;
+	private Boolean poscheck;
 
-	public Treasure() {
+	public Obstacles(int treasureXPos, int treasureYPos) {
 
 		super();
-
+		
+		poscheck = false;
+		
 		setxPos();
 		setyPos();
+		
+		if(treasureXPos == getxPos() && treasureYPos == getyPos()) {
+			
+		}
 
 		this.xPos = getxPos();
 		this.yPos = getyPos();
@@ -23,8 +32,6 @@ public class Treasure {
 	}
 
 	public void setxPos() {
-		
-		// Randomly Generates position
 		r = 0;
 		r2 = (int) (Math.random() * 10);
 
@@ -46,8 +53,6 @@ public class Treasure {
 	}
 
 	public void setyPos() {
-		
-		// Randomly Generates position
 		r = 0;
 		r2 = (int) (Math.random() * 10);
 

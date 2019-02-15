@@ -16,6 +16,7 @@ public class Compass {
 
 	public double setDistance(int playerXPos, int playerYPos, int treasureXPos, int treasureYPos) {
 
+		// Basically pythags a straight line between player and treasure
 		return this.dToTreasure = Math.sqrt(Math.pow(Math.abs(playerXPos) - Math.abs(treasureXPos), 2)
 				+ (Math.pow(Math.abs(playerYPos) - Math.abs(treasureYPos), 2)));
 	}

@@ -32,13 +32,17 @@ public class GameHandler {
 				"You have found a small rusted box. \nYou open it and inside you find the treasure \n \nIt is the secret to 7-balling someone at QA. \nYou clutch at them with a smile and skip towards the sun. \nThe End. \n \nWould you like to play again? (Y/N)");
 		String endGame = sc.nextLine();
 
+		// Ends game or continues based on player input
 		if ("Y".equals(endGame.toUpperCase())) {
 			return true;
 		}
 
 		return false;
 	}
-
+	
+	
+	/* Reusable movement command that moves the player based on input which updates the information 
+	   to the compass and then checks whether the treasure location and player location are the same*/
 	public void movement(String direction, Player p, Treasure t, Compass c) {
 
 		System.out.println(p.playerMove(direction));
