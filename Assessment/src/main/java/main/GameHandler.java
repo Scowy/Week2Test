@@ -39,10 +39,12 @@ public class GameHandler {
 
 		return false;
 	}
-	
-	
-	/* Reusable movement command that moves the player based on input which updates the information 
-	   to the compass and then checks whether the treasure location and player location are the same*/
+
+	/*
+	 * Reusable movement command that moves the player based on input which updates
+	 * the information to the compass and then checks whether the treasure location
+	 * and player location are the same
+	 */
 	public void movement(String direction, Player p, Treasure t, Compass c) {
 
 		System.out.println(p.playerMove(direction));

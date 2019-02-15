@@ -13,14 +13,14 @@ public class Obstacles {
 	public Obstacles(int treasureXPos, int treasureYPos) {
 
 		super();
-		
+
 		poscheck = false;
-		
+
 		setxPos();
 		setyPos();
-		
-		if(treasureXPos == getxPos() && treasureYPos == getyPos()) {
-			
+
+		if (treasureXPos == getxPos() && treasureYPos == getyPos()) {
+
 		}
 
 		this.xPos = getxPos();

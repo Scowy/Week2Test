@@ -23,7 +23,7 @@ public class Treasure {
 	}
 
 	public void setxPos() {
-		
+
 		// Randomly Generates position
 		r = 0;
 		r2 = (int) (Math.random() * 10);
@@ -46,7 +46,7 @@ public class Treasure {
 	}
 
 	public void setyPos() {
-		
+
 		// Randomly Generates position
 		r = 0;
 		r2 = (int) (Math.random() * 10);
